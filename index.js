@@ -76,12 +76,18 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) =>
+    err ? console.error(err) : console.log("Commit logged!")
+  );
+}
 
 // function to initialize program
 function init() {
   inquirer.prompt(questions).then((data) => {
     console.log(data);
+    // let text = generateMarkdown(data);
+    // writeToFile("sample/README.md", text);
   });
 }
 
