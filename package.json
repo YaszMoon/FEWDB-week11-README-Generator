@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/YaszMoon/FEWDB-week11-README-Generator#readme",
   "dependencies": {
-    "inquirer": "^9.1.4"
+    "inquirer": "^6.5.0"
   }
 }
