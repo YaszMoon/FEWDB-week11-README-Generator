@@ -1,0 +1,26 @@
+{
+  "name": "readme_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaszMoon/FEWDB-week11-README-Generator.git"
+  },
+  "keywords": [
+    "README",
+    "generator"
+  ],
+  "author": "Leanne Knight",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YaszMoon/FEWDB-week11-README-Generator/issues"
+  },
+  "homepage": "https://github.com/YaszMoon/FEWDB-week11-README-Generator#readme",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  }
+}
