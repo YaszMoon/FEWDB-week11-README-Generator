@@ -18,14 +18,7 @@ const questions = [
   {
     type: "checkbox",
     message: "What sections would you like to include in your README?",
-    choices: [
-      "Installation",
-      "Usage",
-      "License",
-      "Contributing",
-      "Tests",
-      "Questions",
-    ],
+    choices: ["Installation", "Usage", "Contributing", "Tests", "Credits"],
     name: "content",
   },
   {
@@ -42,15 +35,6 @@ const questions = [
     message: "Give details regarding the use of your project.",
     when: function (answers) {
       return answers.content.includes("Usage");
-    },
-  },
-  {
-    type: "list",
-    name: "license",
-    message: "Choose a license.",
-    choices: ["MIT", "Other", "GPLv2", "Apache", "GPLv3"],
-    when: function (answers) {
-      return answers.content.includes("License");
     },
   },
   {
@@ -71,11 +55,23 @@ const questions = [
   },
   {
     type: "input",
-    name: "questions",
-    message: "How can you be contacted for questions",
+    name: "credits",
+    message:
+      "Add your collaborators, third-party attributes, tutorial links etc.",
     when: function (answers) {
-      return answers.content.includes("Questions");
+      return answers.content.includes("Credits");
     },
+  },
+  {
+    type: "list",
+    name: "license",
+    message: "Choose a license.",
+    choices: ["MIT", "Other", "GPLv2", "Apache", "GPLv3"],
+  },
+  {
+    type: "input",
+    name: "questions",
+    message: "How can you be contacted for questions?",
   },
 ];
 
