@@ -88,7 +88,7 @@ function init() {
     
     let text = generateMarkdown(data);
     console.log(text);
-    // writeToFile("sample/README.md", text);
+    writeToFile("sample/README.md", text);
   });
 }
 
