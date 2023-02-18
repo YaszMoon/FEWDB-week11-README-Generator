@@ -70,9 +70,14 @@ const questions = [
   },
   {
     type: "input",
-    name: "questions",
-    message: "How can you be contacted for questions?",
+    name: "email",
+    message: "Enter your email address."
   },
+  {
+    type: 'input',
+    name: 'github',
+    message: 'Enter your GitHub username'
+  }
 ];
 
 // function to write README file

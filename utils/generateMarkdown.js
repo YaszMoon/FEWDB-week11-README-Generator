@@ -57,7 +57,9 @@ function generateMarkdown(data) {
     }
   });
 
-  return `${licenseBadge}# ${data.title}\n\n## Description\n\n${data.descrip}\n\n${sections}##License\n\n${licenseInfo}\n\n## Questions\n\n${data.questions}\n`;
+  let questions = `To get intouch:\nGithub Username: ${data.github}\nEmail: ${data.email}`
+
+  return `${licenseBadge}# ${data.title}\n\n## Description\n\n${data.descrip}\n\n${sections}##License\n\n${licenseInfo}\n\n## Questions\n\n${questions}\n`;
 }
 
 module.exports = generateMarkdown;
