@@ -1,17 +1,21 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
+  // Table of Contents
+  // Holder for list of optional sections
   let contentsSections = "";
-
+  // Populate list
   data.content.forEach((element) => {
     let forLink = element.toLowerCase();
     contentsSections += `- [${element}](#${forLink})\n\n`;
   });
-
+  // Holder for table of contents which will appear after the Descrption
   let tableContents = `${contentsSections}- [License](#license)\n\n- [Questions](#questions)`;
 
+  // License
+  // Holders for badge and respective info
   let licenseBadge;
   let licenseInfo;
-
+  // Add respective information based on user choice
   switch (data.license) {
     case "MIT":
       licenseBadge =
@@ -42,8 +46,10 @@ function generateMarkdown(data) {
       break;
   }
 
+  // Optional sections
+  // Holder for content
   let sections = "";
-
+  // Populate sections with user selections
   data.content.forEach((element) => {
     switch (element) {
       case "Installation":
@@ -66,9 +72,13 @@ function generateMarkdown(data) {
     }
   });
 
+  // Questions
   let questions = `To get intouch:\n\nGithub Username: ${data.github}\n\nEmail: ${data.email}`;
 
-  return `${licenseBadge}\n\n# ${data.title}\n\n## Description\n\n${data.descrip}\n\n## Table of Contents\n\n${tableContents}\n\n${sections}## License\n\n${licenseInfo}\n\n## Questions\n\n${questions}\n`;
+  // Construct README doc
+  const readme = `${licenseBadge}\n\n# ${data.title}\n\n## Description\n\n${data.descrip}\n\n## Table of Contents\n\n${tableContents}\n\n${sections}## License\n\n${licenseInfo}\n\n## Questions\n\n${questions}\n`;
+
+  return readme;
 }
 
 module.exports = generateMarkdown;
