@@ -38,8 +38,7 @@ Challenge for Week 11 of the Skills for Life Front End Web Development Bootcamp
 
 - When a user enters their email address, it's added to the section of the README entitled Questions, with instructions on how to reach them with additional questions.
 
-- When a user adds more than two optional sections a Table of Contents is generated.
-  - When a user clicks on the links in the Table of Contents, they are taken to the corresponding section of the README.
+- When a user clicks on the links in the Table of Contents, they are taken to the corresponding section of the README.
 
 ## Visuals
 
