@@ -49,3 +49,5 @@ Challenge for Week 11 of the Skills for Life Front End Web Development Bootcamp
 ## Credits
 
 [Markdown License Badge Information](M<https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)> from [Lukas Himsel](https://gist.github.com/lukas-h)
+
+License information from [choosealicense.com](https://choosealicense.com)
