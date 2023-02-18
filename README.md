@@ -20,7 +20,7 @@ Challenge for Week 11 of the Skills for Life Front End Web Development Bootcamp
 
   - Description
 
-  - Table of Contents (if necessary)
+  - Table of Contents
 
   - License
 
