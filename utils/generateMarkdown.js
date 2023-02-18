@@ -1,27 +1,33 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
+  let licenseBadge;
   let licenseInfo;
 
   switch (data.license) {
     case "MIT":
-      licenseInfo =
+      licenseBadge =
         "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+        licenseInfo = `[**MIT License**](https://choosealicense.com/licenses/mit/)\n\nA short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.`
       break;
     case "BSD 3-clause":
-      licenseInfo =
+      licenseBadge =
         "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
+        licenseInfo = `[**BSD 3-Clause License**](https://choosealicense.com/licenses/bsd-3-clause/\n\nA permissive license similar to the BSD 2-Clause License, but with a 3rd clause that prohibits others from using the name of the copyright holder or its contributors to promote derived products without written consent.)`
       break;
-    case "GPLv2":
-      licenseInfo =
-        "[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)";
+    case "Unlicense":
+      licenseBadge =
+        "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
+        licenseInfo = `[**The Unlicense**](https://choosealicense.com/licenses/unlicense/)\n\nA license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code.`
       break;
     case "Apache":
-      licenseInfo =
+      licenseBadge =
         "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+        licenseInfo = `[**Apache License 2.0**](https://choosealicense.com/licenses/apache-2.0/)\n\nA permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.`
       break;
     case "GPLv3":
-      licenseInfo =
+      licenseBadge =
         "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+        licenseInfo = `[**GNU GPLv3**](https://choosealicense.com/licenses/gpl-3.0/)\n\nPermissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.`
       break;
     default:
       break;
@@ -51,7 +57,7 @@ function generateMarkdown(data) {
     }
   });
 
-  return `${licenseInfo}# ${data.title}\n\n## Description\n\n${data.descrip}\n\n${sections}## Questions\n\n${data.questions}\n`;
+  return `${licenseBadge}# ${data.title}\n\n## Description\n\n${data.descrip}\n\n${sections}##License\n\n${licenseInfo}\n\n## Questions\n\n${data.questions}\n`;
 }
 
 module.exports = generateMarkdown;
