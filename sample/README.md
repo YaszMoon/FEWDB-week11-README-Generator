@@ -1,16 +1,14 @@
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)# A Great Title
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+# Most Amazing Project
 
 ## Description
 
-The best project ever.
+This project is so fantastic.
 
 ## Table of Contents
 
-- [Installation](#installation)
-
 - [Usage](#usage)
-
-- [Contributing](#contributing)
 
 - [Credits](#credits)
 
@@ -18,21 +16,13 @@ The best project ever.
 
 - [Questions](#questions)
 
-## Installation
-
-Do the exe thing.
-
 ## Usage
 
-Dip the cookie in milk then eat it.
-
-## Contributing
-
-Fork and Spoon?
+Use this application for awesome results.
 
 ## Credits
 
-The internet knows all.
+The internet is the master of all things.
 
 ## License
 
@@ -44,6 +34,6 @@ A permissive license whose main conditions require preservation of copyright and
 
 To get intouch:
 
-Github Username: ElectricSlide
+Github Username: Meee
 
-Email: electric@slide.com
+Email: me@this.com
