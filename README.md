@@ -2,15 +2,19 @@
 
 ## Description
 
-Challenge for Week 11 of the Skills for Life Front End Web Development Bootcamp
+The challenge for this week was to create an application that generates a professional README.md. The application asks a series of questions and then generates a README.md which is saved to a folder entitled 'sample'. To make the application customisable some sections are optional, that is, the user is not prompted to enter any content unless it is selected.
 
-## User Story
+*You can view a demo and a sample by following the links in the [Visuals](#visuals).*
+
+## Challenge Background
+
+### User Story
 
 **AS A** developer
 **I WANT** a README generator
 **SO THAT** I can quickly create a professional README for a new project
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 - Create a command-line application that accepts user input.
 
@@ -42,12 +46,12 @@ Challenge for Week 11 of the Skills for Life Front End Web Development Bootcamp
 
 ## Visuals
 
-[Video Demonstration](#)
+[Video Demonstration](https://youtu.be/P490LqYTGnc)
 
 [Sample README](./sample/README.md)
 
 ## Credits
 
-[Markdown License Badge Information](M<https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)> from [Lukas Himsel](https://gist.github.com/lukas-h)
+[Markdown License Badge Information](M<https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba) from [Lukas Himsel](https://gist.github.com/lukas-h)
 
 License information from [choosealicense.com](https://choosealicense.com)
